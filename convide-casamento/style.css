@@ -1,0 +1,110 @@
+/* 1. Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f6f1;
+    color: #262521;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. Abertura do convite */
+header {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Texto pequeno acima dos nomes */
+header p:first-child {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+/* Nomes dos noivos */
+header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 8vw, 76px);
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+/* Frase abaixo dos nomes */
+header p:last-child {
+    font-size: 16px;
+    color: #77736c;
+}
+
+/* 3. Conteúdo principal */
+main {
+    padding: 40px 20px 80px;
+}
+
+#inicio {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #dcd7cd;
+    padding-top: 45px;
+}
+
+#inicio h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    color: #77736c;
+    font-size: 15px;
+}
+
+/* 4. Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    header {
+        min-height: 75vh;
+    }
+
+    header h1 {
+        letter-spacing: -1px;
+    }
+
+    #inicio h2 {
+        font-size: 27px;
+    }
+}
+
+/* Data do casamento */
+.data-casamento {
+    margin-top: 30px;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+/* Botão do convite */
+.botao-convite {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border: 1px solid #262521;
+    color: #262521;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.botao-convite:hover {
+    background-color: #262521;
+    color: #ffffff;
+}
